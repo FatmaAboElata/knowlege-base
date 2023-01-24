@@ -1,0 +1,13 @@
+.logo{
+    height: 30px;
+}
+.text{
+    text-align: left;
+}
+.search{
+    text-align: right;
+}
+.color{
+    background-color: #FFF3CD;
+    border: none;
+}

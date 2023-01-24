@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knowlege-home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container">
+
+          <a class="navbar-brand text-sm-end" href="#"><img src="image/project4.jpg" class="logo rounded" alt=""> Knowledge Base</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn p-0 btn-secondary text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">language</a></li>
+                  <li><a class="dropdown-item" href="#">language</a></li>
+                  <li><a class="dropdown-item" href="#">language</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container">
+        <div class="input-group mb-3 mt-3">
+            <input type="search" class="form-control" placeholder="How can we help you" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+          </div>
+      </section><!-- search -->
+
+      <section class="container text-center">
+        <h2 class="mb-3">Most read articles</h2>
+        <div class="row">
+
+            <script>
+                for(i=1 ; i<=4 ; i++){
+                    document.write(`
+                    <div class="col-lg-3 col-md-6 ">
+                <div class="card p-2 mb-1">
+                    <img src="image/project${i}.jpg" class="photo img-fluid"  alt="">
+                    <a href="article.html" class="text-center fw-semibold my-2">Article Heading</a>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a odio nisi.</small>
+                </div><!-- card -->
+            </div><!-- col -->
+                    `)
+                }
+            </script>
+            
+            <hr class="mt-4">
+        </div><!-- row -->
+        
+      </section><!-- article -->
+
+      <section class="container text-center">
+        <h2 class="mb-3">Categories</h2>
+        <div class="row">
+
+            <script>
+                for(i=1 ; i<=12 ; i++){
+                    document.write(`
+                    <div class="col-lg-3 col-md-6 text mb-5">
+                <a href="categry.html" class="fw-semibold my-2">Category Heading</a><br>
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a odio nisi.</small>
+            </div><!-- col -->
+                    `)
+                }
+            </script>
+    
+        </div><!-- row -->
+       </section><!-- categry -->
+
+       <footer class="text-center bg-light p-5">
+        <img src="image/project4.jpg" class="logo rounded" style="width: 90px; height: 40px;" alt=""> <br>
+        <small>&copy; 2020 Fatma Abo-elata. All Rights Reserved.</small>
+        <ul class="d-flex text-center py-3 justify-content-center list-unstyled align-content-center">
+            <li class="me-5"><div class="d-flex">
+                <i class="fa-solid fa-house-chimney-window text-secondary me-1 "></i>
+                <a href="#"><small>Brand Name</small></a>
+            </div></li>
+            <li class="me-5"><div class="d-flex">
+                <i class="fa-solid fa-book-open text-secondary me-1 "></i>
+                <a href="#"><small>Tutorials</small></a>
+            </div></li>
+            <li class="me-5"><div class="d-flex">
+                <i class="fa-solid fa-pen text-secondary me-1 "></i>
+                <a href="#"><small>Blog</small></a>
+            </div></li>
+            <li class="me-5"><div class="d-flex">
+                <i class="fa-solid fa-envelope text-secondary me-1 "></i>
+                <a href="#"><small>Contact</small></a>
+            </div></li>
+        </ul>
+        
+       </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
